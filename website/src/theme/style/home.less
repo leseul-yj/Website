@@ -3,10 +3,12 @@
 #pageCtn[data-page="home"] {
     .wall {
         position: relative;
+
         .illustration {
             object-fit: cover;
             z-index: -1;
         }
+
         h1 {
             font-family: "HindGuntur-SemiBold";
         }
@@ -14,24 +16,34 @@
         &[data-module="summary"] {
             color: white;
             height: 100vh;
+
             .illustration {
                 position: absolute;
                 width: 100%;
                 height: 100%;
                 top: 0;
             }
+
+            .col-md-5,
+            .col-md-7 {
+                float: right;
+            }
+
             .content {
                 max-width: 1425px;
                 margin: auto;
+
                 h1 {
                     font-size: 80 / @root;
                     max-width: 960 / @root;
                 }
+
                 p {
                     margin-top: 45 / @root;
                     font-size: 18 / @root;
                     max-width: 960 / @root;
                 }
+
                 .decoration {
                     display: inline-block;
                     height: 6 / @root;
@@ -40,15 +52,18 @@
                 }
             }
         }
+
         &[data-module="ai_engine"] {
             padding: 5% 0;
             background-image: linear-gradient(to right, rgba(82, 113, 236, 0.05), rgba(145, 192, 254, 0.05));
+
             .illustration {
                 left: 27.5%;
                 width: 57.5%;
                 top: 20%;
                 position: relative;
             }
+
             .content {
                 width: 20%;
                 left: 15%;
@@ -56,12 +71,14 @@
                 padding: 15% 0;
                 position: absolute;
                 transform: translateY(-50%);
+
                 h1 {
                     padding: 20 / @root 20 / @root 0 20 / @root;
                     color: #333a47;
                     font-size: 58 / @root;
                     background: white;
                 }
+
                 p {
                     margin-top: 20 / @root;
                     padding: 20 / @root;
@@ -69,6 +86,7 @@
                     color: #6d727d;
                     font-size: 14 / @root;
                 }
+
                 .btnMore {
                     cursor: pointer;
                     text-decoration: none;
@@ -77,21 +95,25 @@
                     color: #003adc;
                     display: flex;
                     align-items: center;
+
                     .iconfont {
                         margin-left: 6 / @root;
                     }
                 }
             }
         }
+
         &[data-module="application"] {
             padding: 5% 0;
             background-image: linear-gradient(to right, rgba(82, 113, 236, 0.05), rgba(145, 192, 254, 0.05));
+
             .illustration {
                 left: 15%;
                 width: 57.5%;
                 top: 20%;
                 position: relative;
             }
+
             .content {
                 width: 32%;
                 right: 10%;
@@ -99,12 +121,14 @@
                 padding: 15% 0;
                 position: absolute;
                 transform: translateY(-50%);
+
                 h1 {
                     padding: 20 / @root 20 / @root 0 20 / @root;
                     color: #333a47;
                     font-size: 58 / @root;
                     background: white;
                 }
+
                 p {
                     margin-top: 20 / @root;
                     padding: 20 / @root;
@@ -112,6 +136,7 @@
                     color: #6d727d;
                     font-size: 14 / @root;
                 }
+
                 .btnMore {
                     cursor: pointer;
                     text-decoration: none;
@@ -120,24 +145,29 @@
                     color: #003adc;
                     display: flex;
                     align-items: center;
+
                     .iconfont {
                         margin-left: 6 / @root;
                     }
                 }
             }
         }
+
         &[data-module="industry"] {
             padding: 15vh 0;
             background-image: linear-gradient(to left, rgba(82, 113, 236, 0.05), rgba(145, 192, 254, 0.05));
+
             h1 {
                 text-align: center;
                 padding: 25 / @root 0;
                 font-size: 58 / @root;
             }
+
             .row {
                 height: 50%;
                 margin: 0;
                 padding: 0 10%;
+
                 .item {
                     padding: 0;
                     display: flex;
@@ -152,6 +182,7 @@
                             transition: 0.2s;
                         }
                     }
+
                     &::before {
                         content: "";
                         position: absolute;
